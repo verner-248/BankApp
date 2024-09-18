@@ -1,0 +1,7 @@
+card: 9090
+loan: 8090
+account: 8080
+config-server: 8070
+eureak: 8070
+api gateway: 8072
+zipkin: 9411
