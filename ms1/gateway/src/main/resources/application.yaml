@@ -9,6 +9,11 @@ spring:
     show-sql: true
   application:
     name: gateway
+  security:
+    oauth2:
+          resource server:
+            jwt:
+              jwk-set-uri: "http://localhost:5080/realms/master/protocol/openid-connect/certs"
 server:
   port: 8072
 management:
