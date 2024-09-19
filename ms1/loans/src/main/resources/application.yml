@@ -21,6 +21,9 @@ management:
   info:
     env:
       enabled: true
+  tracing:
+    sampling:
+          probability: 1.0
 info:
   message: "welcome to loan application default profile"
   name: "raj default profile"
@@ -32,3 +35,7 @@ eureka:
     fetch-registry: true
     service-url:
       defaultZone: http://localhost:8070/eureka/
+
+logging:
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"

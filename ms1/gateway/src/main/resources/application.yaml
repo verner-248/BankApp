@@ -26,6 +26,9 @@ management:
       enabled: true
     info:
       enabled: true
+  tracing:
+    sampling:
+          probability: 1.0
 eureka:
   client:
     register-with-eureka: true
@@ -37,3 +40,7 @@ build:
 info:
   message: "Welcome to busycoder coupon default profile"
   name: "Raj: Product Owner coupon default profile"
+
+logging:
+  pattern:
+    level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
