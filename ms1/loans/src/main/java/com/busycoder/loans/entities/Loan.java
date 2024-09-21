@@ -33,4 +33,6 @@ public class Loan {
         this.amountPaid = amountPaid;
         this.outstandingAmount = outstandingAmount;
     }
+
+
 }

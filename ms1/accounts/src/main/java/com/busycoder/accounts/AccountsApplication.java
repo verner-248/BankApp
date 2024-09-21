@@ -10,9 +10,11 @@ import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;
 import org.springframework.cloud.openfeign.EnableFeignClients;
 
+
 @SpringBootApplication
 @EnableConfigurationProperties(InfoDto.class)
 @EnableFeignClients("com.busycoder.accounts.serviceproxy")
+ 
 public class AccountsApplication implements CommandLineRunner {
 
 	@Autowired

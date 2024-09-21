@@ -39,3 +39,9 @@ eureka:
 logging:
   pattern:
     level: "%5p [${spring.application.name:},%X{traceId:-},%X{spanId:-}]"
+
+#sonar:
+#  projectKey: BankApp
+#  projectName: BankApp
+#  host:
+#    url: http://localhost:9000
